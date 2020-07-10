@@ -1,0 +1,114 @@
+@-ms-viewport {
+  width: device-width;
+}
+.info-panel {
+  height: 200px;
+  width: 100%;
+}
+.carousel .carousel-inner .item {
+  transition-property: opacity;
+}
+.carousel .carousel-inner .item img {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.carousel .carousel-inner .item,
+.carousel .carousel-inner .active.left,
+.carousel .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel .carousel-inner .active,
+.carousel .carousel-inner .next.left,
+.carousel .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel .carousel-inner .next,
+.carousel .carousel-inner .prev,
+.carousel .carousel-inner .active.left,
+.carousel .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+.carousel .carousel-caption {
+  padding: 0;
+  bottom: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-shadow: 0 0 10px black;
+}
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+#details-nav ul {
+  width: 135px;
+}
+#details-nav .affix {
+  top: 20px;
+}
+#details-nav .affix-bottom {
+  position: absolute;
+}
+#details-list > .list-group-item:nth-child(even) {
+  background-color: #f5f5f5;
+}
+#dance-accordion .panel-heading {
+  cursor: pointer;
+}
+.navbar {
+  min-height: 75px;
+  margin-bottom: 0px;
+  background-image: -webkit-linear-gradient(top, #f2f2f2 0%, #eeffe3 100%);
+  background-image: -o-linear-gradient(top, #f2f2f2 0%, #eeffe3 100%);
+  background-image: linear-gradient(to bottom, #f2f2f2 0%, #eeffe3 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2f2f2', endColorstr='#ffeeffe3', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.navbar .navbar-toggle {
+  margin-top: 18px;
+  margin-bottom: 17px;
+}
+@media (min-width: 768px) {
+  .navbar .navbar-nav > li > a {
+    padding-top: 28px;
+    padding-bottom: 27px;
+  }
+}
+.navbar .navbar-nav > .open > a,
+.navbar .navbar-nav > .active > a {
+  background-image: -webkit-linear-gradient(top, #defeca 0%, #e7fed9 100%);
+  background-image: -o-linear-gradient(top, #defeca 0%, #e7fed9 100%);
+  background-image: linear-gradient(to bottom, #defeca 0%, #e7fed9 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdefeca', endColorstr='#ffe7fed9', GradientType=0);
+  -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.075);
+}
+.navbar .navbar-brand {
+  position: relative;
+  z-index: 2;
+  padding-top: 0;
+  padding-right: 0;
+}
+.navbar .navbar-brand img {
+  max-width: 321px;
+  width: 70vw;
+}
+.navbar svg {
+  width: 100%;
+  height: 75px;
+  position: absolute;
+}
+body > div.container > div {
+  margin-top: 15px;
+}
+.brand-guard {
+  display: inline-block;
+  max-width: 160px;
+  width: 35vw;
+}
+@media (min-width: 992px) {
+  .brand-guard {
+    display: none !important;
+  }
+}
